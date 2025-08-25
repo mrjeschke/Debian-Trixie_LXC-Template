@@ -1,8 +1,8 @@
 BASEDIR:=$(shell dab basedir)
 
 all: info/init_ok
-        dab bootstrap
-        # configure timezone
+	dab bootstrap
+	# configure timezone
         echo "Europe/Berlin" > ${BASEDIR}/etc/timezone
         dab exec cp --remove-destination -- /usr/share/zoneinfo/Europe/Berlin /etc/localtime
         dab exec dpkg-reconfigure -f noninteractive tzdata

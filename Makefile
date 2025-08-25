@@ -11,10 +11,10 @@ all: info/init_ok
 	# base software
 	dab exec dpkg --purge postfix
 	dab install sudo curl needrestart
-		# change boot-target
-		dab exec systemctl set-default multi-user.target
-		# NOTE: zstd appliances are only supported on PVE >= 7.0, take care on upload!
-		dab finalize --compressor zstd-max
+	# change boot-target
+	dab exec systemctl set-default multi-user.target
+	# NOTE: zstd appliances are only supported on PVE >= 7.0, take care on upload!
+	dab finalize --compressor zstd-max
 
 info/init_ok: dab.conf
 	dab init

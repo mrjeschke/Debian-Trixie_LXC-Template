@@ -17,8 +17,8 @@ all: info/init_ok
 		dab finalize --compressor zstd-max
 
 info/init_ok: dab.conf
-        dab init
-        touch $@
+		dab init
+		touch $@
 
 .PHONY: clean
 clean:

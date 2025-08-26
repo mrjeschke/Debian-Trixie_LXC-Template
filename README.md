@@ -3,9 +3,9 @@ Zeitzone Europe/Berlin\
 ping für user pigd 1000-2000\
 sudo curl needrestart installiert\
 boot-target multi-user\
-LXC-Container https://drive.google.com/file/d/14cau6wVMN8ByG-eij4bjelvXHQQYuRJI/view?usp=sharing\
+Template https://drive.google.com/file/d/14cau6wVMN8ByG-eij4bjelvXHQQYuRJI/view?usp=sharing\
 
-## Container erstellen
+## Template erstellen
 In Proxmox als root einloggen\
 apt-get install dab\
 mkdir dab\
